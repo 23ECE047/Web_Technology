@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <style>
+           #tag1{
+               color: #c21f1f;
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+               font-size: larger;
+           }
+           #tag1:hover{
+            color: aqua;
+            font-size: large;
+           }
+           .marquee{
+            overflow: hidden;
+            color: rgb(42, 181, 109);
+            white-space: nowrap;
+            box-sizing: border-box;
+            animation: marquee 10s linear infinite;
+           }
+           #tag2{
+            transition: color 0.5s ease;
+            font-size: 0.8s ease;
+           }
+           #tag2:hover{
+            color: rgb(30, 185, 227);
+            font-size: large;
+           }
+           
+           @keyframes marquee{
+               from{
+                transform: translateX(100%);
+               }
+               to{
+                transform: translateX(-100%);
+               }
+           }
+        </style>
+
+    </head>
+    <body>
+        <div class="marquee"
+        <h1>Marquee using js</h1>
+    </div>
+        <p id="tag1">Text one</p>      
+        <p id="tag2">Text two</p>
+        <script>
+            
+            document.getElementById("tag2").style.fontFamily="Arial";
+            document.getElementById("tag2").style.fontSize="30px";
+        </script>  
+</html>
