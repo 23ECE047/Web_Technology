@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <title>Responsive Media Page</title>
+        <style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                line-height: 1.5;
+                background:linear-gradient(120deg,rgb(78, 25, 138),rgb(232, 170, 223)) ;
+            }
+            header{
+                text-align: center;
+                padding: 50px 22px;
+                background: linear-gradient(130deg,#299e5c);
+            }
+            header h1{
+                font-size: 3rem;
+                color: rgb(162, 62, 115);
+                margin-bottom: 35px;
+
+            }
+            header p{
+                font-size: 2rem;
+                margin-bottom: 30px;
+            }
+            header .mda{
+                background: #b531aa;
+                color: #fff;
+                padding: 12px 28px;
+                font-size: 1.3rem;
+                border-radius:35px ;
+                box-shadow: 35px;
+                transition:transform 0.5s,box-shadow 0.5s;
+
+            }
+            header .mda:hover{
+                transform: translate(-6px);
+                box-shadow: 0 10px 20px rgb(38, 151, 192);
+            }
+            .grid-view{
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                gap: 25px;
+                padding:50px 30px;
+                max-width: 1150px;
+            }
+            .grid{
+                background: #7898af;
+                
+            }
+             .grid:hover{
+                transform: translate(-7px);
+                box-shadow: 0 12px 25px rgba(16, 101, 229, 0.6);
+             } 
+             .grid h2{
+                font-size: 1.7rem;
+                margin-bottom: 18px;
+                color:#83b2db;
+             }
+             .grid p{
+                font-size:1rem;
+                color: rgba(46, 55, 47, 0.7);
+                
+             }
+             footer{
+                text-align: center;
+                padding: 20px;
+                background: #508ea4;
+                color:#232c33;
+                font-weight: bold;
+             }
+             @media(max-width:1150px){
+                .grid-view{
+                    grid-template-columns: repeat(2,0.8fr);
+                }
+                header h1{
+                    font-size: 2.5rem;
+                }
+                header p{
+                    font-size: 0.5rem;
+                }
+                header .mda{
+                    padding: 15px 26px;
+                }
+             }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Landing page</h1>
+            <p>Here we can experience the responsive design and modern page</p>
+            <a href="# " class="mda">let's begin!!</a>
+        </header>
+        <section class="grid-view">
+            <div class="grid">
+                <h2>Discover the option</h2>
+                <P>here is an innovative design which response the layout and proper visual</P>
+
+            </div>
+            <div class="grid">
+                <h2>Discover the second option</h2>
+                <p>Experience the seamless responsive to all over the devices and screen size.</p>
+            </div>
+            <div class="grid">
+                <h2>Discover the third option</h2>
+                <p>Here is the feel of creative and dynamic webpage which is use friendly.</p>
+
+            </div>
+            <div class="grid">
+                <h2>Discover the fourth option</h2>
+                <p>Innovative and creative ideas into web.</p>
+
+            </div>
+            <div class="grid">
+                <h2>Discover the fifth option</h2>
+                <p>End-user can create and enjoy  with the site.</p>
+
+            </div>
+        </section>
+        <footer>
+            <p>2025 responsive design. All rights reserved.<a href="#">terms and conditions</a></p>
+        </footer>
+    </body>
+
+</html>

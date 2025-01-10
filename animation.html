@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>
+            Animation
+        </title>
+        <style>
+        body{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding: 20px;
+            margin: 0%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(110, 184, 209);
+            color: rgb(45, 24, 42);
+        }
+        .animy{
+            overflow: hidden;
+            width: 90%;
+            border: 2px solid #d10f76;
+            border-radius: 12px;
+            text-align: center;
+            padding: 10px;
+            white-space: nowrap;
+        }
+        .effect{
+            display: inline-block;
+            font-size: 25px;
+            font-weight: bold;
+            animation: scroll-left 12s linear infinite;
+        }
+        @keyframes scroll-left{
+            from{
+                transform: translateX(100%);
+            }
+            to{
+                transform: translateX(-100%);
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="animy">
+            <div class="effect">
+                Here is the scrolling text animation
+            </div>
+            
+        </div>
+    </body>
+</html>

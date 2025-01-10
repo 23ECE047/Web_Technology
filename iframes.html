@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Developing Iframes</title>
+        <style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+                background-color: rgb(190, 220, 218);
+                color: rgb(221, 236, 237);
+                padding: 18px;
+            }
+            h1{
+                font-size: 2.5rem;
+                margin-bottom: 20px;
+            }
+            .gal-container{
+                display: grid;
+                grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+                gap:15px;
+                padding: 20px;
+                max-width: 900px;
+                max-height: 1000px;
+                margin: auto;
+            }
+            .iframe-container{
+                width: 100%;
+                height: 250px ;
+                border: 5px,solid #fff;
+                border-radius: 1%;
+            }
+            iframe{
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+            @media(max-width:760px){
+                .gal-container{
+                    grid-template-columns: repeat(auto-fit,minmax(200px,ifr));
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Interactive Iframe Page</h1>
+        <div class="gal-container">
+            <div class="frame-container">
+                <iframe src="https://live.staticflickr.com/8630/28837951571_36a6bd2187_b.jpg">
+                </iframe>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://th.bing.com/th/id/OIP.1gzFgCamhP5TDxg44AYKwwAAAA?rs=1&pid=ImgDetMain" title="teddy"></iframe>
+            </div>
+            <div class="iframe-container">
+                <iframe src="https://th.bing.com/th/id/R.60ec806d524c21632f6a0c7060b1b92e?rik=Ipucj3%2bE63zw0w&riu=http%3a%2f%2ffarm8.staticflickr.com%2f7281%2f8874270432_8f4a146b57_o.jpg&ehk=BG3yhYYpzDmNFaR1DgTrWbY4yuFeRhuxl22PFxS0TF0%3d&risl=1&pid=ImgRaw&r=0"></iframe>
+            </div>
+        </div>
+        <h2>Google map Iframe</h2>
+        <div class="iframe-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945976.632261315!2d73.67873672873465!3d15.020834401075176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba35a4c37bf488f%3A0x41f1d28cd1757cd5!2sKarnataka!5e0!3m2!1sen!2sin!4v1736224081942!5m2!1sen!2sin" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </div>
+        
+        <h2>you tube video iframe</h2>
+        <div class="iframe-container">
+            <iframe width="300" height="450" src="https://www.youtube.com/embed/2g9zQp0jruM?si=uFZRB3I13X1hX0RZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    </body>
+</html>

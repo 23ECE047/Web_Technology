@@ -1,0 +1,115 @@
+<html>
+    <head>
+        <title>
+            Hyperlink page
+        </title>
+        <style>
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                margin:0;
+                padding: 0;
+                background-color: beige;
+                color:black ;
+            }
+            header{
+             background-color: rgb(255,145,145);
+             color: ghostwhite;
+             padding: 8px 15px;
+             text-align: center;
+            }
+                nav{
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            padding: 10px ;
+          }
+          nav a{
+            color: bisque;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 12px;
+            border-radius: 6px;
+            transition:background-color 0.8s;
+          }
+          nav a:hover{
+            background-color:blueviolet;
+          }
+          section{
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 700px;
+            background: cadetblue;
+            box-shadow: 0 0 10px rgba(0,0,0.1);
+            border-radius: 10px;
+          }
+          h1,h2{
+            color: mediumturquoise;
+          }
+          .button{
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            color: burlywood;
+            background-color:rgb(179, 220, 139);
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+          }
+          .button:hover{
+            background-color: #0056b3;
+          }
+            footer{
+        text-align:center ;
+        padding: 10px;
+        
+            }
+        </style>
+    </head>
+    <body>
+    <header>
+        <h1>Showcase of myHyperlink page</h1>
+
+    </header>
+    <nav>
+        
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Features</a>
+        <a href="">Thread</a>
+    </nav>
+    <section id=" about">
+        <h2>About us</h2>
+        <hr>
+        <p>
+            we are creating a webpage that serves as amazing website
+        
+        <a href="https://example.com/about" class="button">CLICK</a>
+        </p>
+    </section>
+    <section id="thread">
+        <h2>My Thread Page</h2>
+        <ul>
+            <li>
+                <a href="https://github.com">visit my github link</a>
+            </li>
+            <li>
+                <a href="https://example.com/portfolio">View Portfolio</a>
+            </li>
+            <li>
+                <a href="Contact">Contact me</a>
+            </li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact me</h2>
+        <p>Have any queries or wanna contact ? send mail as:
+            <a href="mail:ex@example.com">ex@example.com</a>
+        </p>
+    </section>
+    <footer>
+        <p>
+            &copy;2025 WebSite.All Rights Reserved.
+        </p>
+    </footer>
+    </body>
+</html>

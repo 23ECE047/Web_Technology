@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Button glow </title>
+    
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 110vh;
+            margin: auto;
+            background: linear-gradient(130deg,#db75d6,#7ab694,#65a6cc);
+            color: rgb(182, 76, 27);
+        }
+        .glow{
+            background: linear-gradient(130deg,#95b5c1,#b6a07a);
+            color: #fff;
+            border: rgb(53, 53, 202);
+            padding: 15px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 35px;
+            cursor: pointer;
+            outline: rgb(23, 181, 97);
+            transition: transform 0.5s ease,box-shadow 0.7s ease;
+            position: relative;
+        }
+        .glow:hover{
+            transform: translate(-6px);
+            box-shadow: 0 10px 22px #82dbaf;
+        }
+        .glow:active{
+            transform: translate(3px);
+            box-shadow: 0 5px 10 #ba1212;
+        }
+    </style>
+    </head>
+    <body>
+        <button class="glow">Click here</button>
+    </body>
+</html>

@@ -1,0 +1,94 @@
+<html>
+    <head>
+        <title>Listing the Data Using CSS</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #8e9fc1;
+                color: #ad7676;
+                margin: 20px;
+            }
+            h1 {
+                text-align: center;
+                color: #2a84eb;
+                text-shadow: 1px 1px 3px #53e06b;
+                margin-bottom: 40px;
+            }
+            h2 {
+                color: #555;
+                text-transform: uppercase;
+                font-size: 20px;
+                border-bottom: 2px solid #417cc0;
+                display: inline-block;
+                padding-bottom: 5px;
+                margin-bottom: 15px;
+            }
+            .List-Item {
+                margin: 30px auto;
+                max-width: 800px;
+                padding: 70px;
+                background-color: #cbc2ca;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgba(86, 185, 194, 0.1);
+            }
+            ul.dynamic-list, ol.odr-list {
+                padding-left: 0;
+                margin-top: 10px;
+            }
+            ul.dynamic-list li, ol.odr-list li {
+                list-style: none;
+                margin: 10px 0;
+                padding: 15px;
+                background: #b2d3e2;
+                border: 1px solid #062837;
+                border-radius: 6px;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                transition: all 0.3s ease;
+            }
+            ul.dynamic-list li:hover, ol.odr-list li:hover {
+                background: #d2f0fc;
+                transform: translateY(-3px);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            }
+            ul.dynamic-list ul, ol.odr-list ol {
+                margin-left: 20px;
+                padding-left: 15px;
+                border-left: 3px solid #b3e5fc;
+            }
+            ul.dynamic-list ul li, ol.odr-list ol li {
+                background: #b7c5cd;
+                border: 1px solid #e0f7fc;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS Lists</h1>
+        <div class="List-Item">
+            <h2>Provision List</h2>
+            <ul class="dynamic-list">
+                <li>Stationary Items</li>
+                <li>Candy</li>
+                <li>Spices
+                    <ul>
+                        <li>Veggies</li>
+                        <li>Chips</li>
+                    </ul>
+                </li>
+                <li>Soft Drinks</li>
+            </ul>
+        </div>
+        <div class="List-Item">
+            <h2>Ordered List</h2>
+            <ol class="odr-list">
+                <li>Paper</li>
+                <li>Wrist Watch
+                    <ol>
+                        <li>Airpods</li>
+                        <li>Tab</li>
+                    </ol>
+                </li>
+                <li>Sweets</li>
+            </ol>
+        </div>
+    </body>
+</html>

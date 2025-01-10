@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <style>
+            #xx {
+                width: 410px;
+                height: 410px;
+                position: relative;
+                background: #a3b1d5;
+                border-radius: 30px;
+
+            }
+            #animate{
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                background-color: #70cfde;
+                border-radius: 100px;
+                
+            }
+        </style>
+ 
+    </head>
+    <body>
+        <p>
+            <button onclick="myMove()">Click me</button></p>
+            <div id="xx">
+                <div id="animate"></div>
+            </div>
+            <script>
+                function myMove(){
+                    let id= null;
+                    const obj=document.getElementById("animate");
+                    let move=0;
+                    clearInterval(id);
+                    id=setInterval(frame, 6);
+                    //Function definition
+                    function frame(){
+                        if(move === 350){
+                            clearInterval(id);
+                        }
+                        else{
+                            move++;
+                            obj.style.top=move+"px";
+                            obj.style.left=move+"px";
+                        }
+                    }
+
+                }
+            </script>
+        
+    </body>
+</html>
